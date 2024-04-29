@@ -1,0 +1,14 @@
+def objective_function(O):
+    x = O[0]
+    y = O[1]
+    return -np.abs(np.sin(x) * np.cos(y) * np.exp(np.abs(1 - np.sqrt(x**2 + y**2) / np.pi)))
+  
+bounds = [(-10, 10), (-10, 10)] 
+nv = 2 
+mm = -1  
+  
+particle_size = 5  
+iterations = 50
+w = 0.75  
+c1 = 1 
+c2 = 2  
