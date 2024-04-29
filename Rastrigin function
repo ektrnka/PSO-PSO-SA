@@ -1,0 +1,14 @@
+def objective_function(X):
+    A  = 10
+    Y= A*2+sum([(x**2-A*np.cos(2*math.pi*x)) for x in X])
+    return Y
+
+
+bounds = [(-5.12, 5.12), (-5.12, 5.12)]
+nv = 2  
+mm = -1  
+particle_size = 50  
+iterations = 100  
+w = 0.75  
+c1 = 1 
+c2 = 2  
